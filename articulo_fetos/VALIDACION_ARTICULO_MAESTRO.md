@@ -1,0 +1,21 @@
+# Validación del artículo maestro
+
+- Documento fuente: `manuscrito/Articulo_fetos_CORREGIDO.docx`
+- Documento final: `manuscrito/Articulo_fetos_MAESTRO.docx`
+- Secciones actualizadas: Métodos; Resultados; Discusión; Limitaciones.
+- Resumen: conservó la actualización validada de adherencia del documento fuente.
+- Abstract: no existe como sección en el documento fuente; no se inventó una traducción.
+- Subsecciones creadas: `3.8.1 Adecuación o adherencia a los controles prenatales`; `4.9.1 Adherencia a controles prenatales`.
+- Tablas conservadas e integradas: Tabla 1 y tablas A1–A4.
+- Figura insertada y conservada: Figura A1.
+- N analítico de adherencia: 23.442; eventos: 423.
+- Comprobación de resultados numéricos: OK.
+- Validación visual mediante PDF temporal: OK (28 páginas, tamaño carta).
+- Tablas A1 y A4 continúan en páginas sucesivas con cabecera repetida; no se dividieron filas.
+- Figura A1: visible, proporcionada y sin deformación.
+- Títulos, pies, porcentajes, intervalos y símbolos ≥ y <: visibles correctamente.
+- Errores residuales Tabla 1: 0.
+- Discrepancias encontradas: ninguna numérica.
+- Discrepancias corregidas en esta consolidación: separación estructural de metodología y resultados; aclaración de valores >100% y estratificación.
+- Numeración A1–A4: provisional y sin colisiones; la numeración editorial final requiere revisión.
+- Revisión humana pendiente: decisión editorial sobre numeración definitiva y eventual incorporación de Abstract; aprobación o referencia externa de la regla operacional 1/2/3/6/8.
