@@ -1,0 +1,11 @@
+"Variable","aOR","IC95","p","N_modelo"
+"Edad materna <20 vs 20-34","0.90","0.46-1.76","0.756",23272
+"Edad materna >=35 vs 20-34","1.08","0.88-1.33","0.449",23272
+"Preeclampsia vs ningun trastorno hipertensivo","0.86","0.60-1.24","0.423",23272
+"HTA inducida por embarazo vs ninguno","0.84","0.48-1.46","0.530",23272
+"HTA preexistente vs ninguno","0.58","0.08-4.25","0.591",23272
+"Eclampsia vs ningun trastorno hipertensivo","2.46","0.93-6.45","0.068",23272
+"IVU si vs no","0.27","0.07-1.11","0.070",23272
+"Riesgo alto vs riesgo bajo","1.64","1.32-2.03","<0.001",23272
+"Riesgo inminente vs riesgo bajo","1.89","1.33-2.69","<0.001",23272
+"Numero de controles prenatales, por cada control adicional","0.82","0.79-0.85","<0.001",23272

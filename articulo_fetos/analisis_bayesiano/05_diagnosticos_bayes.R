@@ -1,0 +1,13 @@
+source("analisis_bayesiano/00_funciones_bayes.R")
+arch <- list.files(DIR_MODELOS,"^BAYES_.*\\.rds$",full.names=TRUE)
+arch <- arch[!grepl("PRIOR_ONLY|PRIOR_PREDICTIVO",arch)]
+fits <- lapply(arch,readRDS); names(fits)<-sub("\\.rds$","",basename(arch))
+dg <- bind_rows(Map(diagnostico_modelo,fits,names(fits)))
+write_csv(dg,file.path(DIR_DIAG,"DIAGNOSTICOS_TODOS_MODELOS.csv"))
+fp <- fits$BAYES_PRINCIPAL; pars<-grep("^b_",variables(fp),value=TRUE)
+png(file.path(DIR_FIGURAS,"TRACE_PRINCIPAL.png"),2400,1800,res=200); print(mcmc_trace(as_draws_array(fp),pars=pars)); dev.off()
+png(file.path(DIR_FIGURAS,"RANK_PRINCIPAL.png"),2400,1800,res=200); print(mcmc_rank_overlay(as_draws_array(fp),pars=pars)); dev.off()
+write_csv(dg[dg$Modelo=="BAYES_PRINCIPAL",],file.path(DIR_DIAG,"DIAGNOSTICOS_PRINCIPAL.csv"))
+loo_names<-intersect(c("BAYES_PRINCIPAL","BAYES_PRIOR_ESCEPTICO","BAYES_PRIOR_AMPLIO"),names(fits))
+loos<-lapply(loo_names,function(n){lf<-file.path(DIR_DIAG,paste0("LOO_",n,".rds")); x<-if(file.exists(lf))readRDS(lf) else loo(fits[[n]]); if(!file.exists(lf))saveRDS(x,lf); tibble(Modelo=n,ELPD=x$estimates["elpd_loo","Estimate"],SE=x$estimates["elpd_loo","SE"],Pareto_k_mayor_07=sum(pareto_k_values(x)>.7),Pareto_k_max=max(pareto_k_values(x)))})
+loot<-bind_rows(loos); write_csv(loot,file.path(DIR_TABLAS,"LOO_MODELOS.csv")); write_csv(loot[loot$Modelo=="BAYES_PRINCIPAL",],file.path(DIR_TABLAS,"LOO_PRINCIPAL.csv"))

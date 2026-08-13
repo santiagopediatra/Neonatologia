@@ -1,0 +1,11 @@
+Factor,OR posterior (CrI95%),P(OR>1),P(OR<1),N
+Edad <20 vs 20-34,"0,90 (0,47–1,61)","0,373","0,627",23272
+EDAD_CAT>EQ35,"1,08 (0,88–1,32)","0,770","0,230",23272
+Preeclampsia vs ninguno,"0,88 (0,62–1,24)","0,229","0,771",23272
+HTA inducida por embarazo vs ninguno,"0,85 (0,50–1,40)","0,263","0,737",23272
+HTA preexistente vs ninguno,"0,79 (0,26–2,08)","0,328","0,672",23272
+Eclampsia vs ningún trastorno hipertensivo,"1,78 (0,72–3,98)","0,898","0,102",23272
+IVU sí vs no,"0,47 (0,18–1,03)","0,030","0,970",23272
+Riesgo alto vs riesgo bajo,"1,60 (1,29–1,98)","1,000","<0,001",23272
+Riesgo inminente vs riesgo bajo,"1,81 (1,29–2,51)","1,000","<0,001",23272
+"Controles prenatales, por 1 DE adicional","0,59 (0,54–0,64)","<0,001","1,000",23272

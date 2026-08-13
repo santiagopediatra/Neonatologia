@@ -1,0 +1,36 @@
+Texto_resultado,Valor,Variable,Modelo,Archivo_fuente,Fila_o_parametro
+Registros totales,23848,N total,Descriptivo,resumen_base_bayesiana.csv,N_total_inicial
+Desenlace conocido,23642,MUERTE_FETAL_BINARIA,Descriptivo,resumen_base_bayesiana.csv,N_desenlace_conocido
+Muerte fetal,489,MUERTE_FETAL_BINARIA,Descriptivo,resumen_base_bayesiana.csv,Eventos
+Sin muerte fetal,23153,MUERTE_FETAL_BINARIA,Descriptivo,resumen_base_bayesiana.csv,No_eventos
+Desenlace faltante,206,MUERTE_FETAL_BINARIA,Descriptivo,base_analitica_frecuentista.csv,23848-23642
+Frecuencia relativa entre desenlaces conocidos,"2,07%",MUERTE_FETAL_BINARIA,Descriptivo,resumen_base_bayesiana.csv,489/23642
+Edad incompatible a faltante,247,EDAD_ANALITICA,Calidad,TABLA_1_FRECUENCIAS_POR_DESENLACE.csv,Edad/faltantes
+Seguro faltante,7386 (~31%),SEGURO,Calidad,base_analitica_frecuentista.csv,SEGURO NA
+Acompañamiento no interpretable,65,ACOMPANADA,Calidad,base_analitica_frecuentista.csv,ACOMPANADA=0
+Embarazo múltiple sin desenlace,206,EMBARAZO_MULTIPLE_BINARIO,Calidad,base_analitica_frecuentista.csv,SI y desenlace NA
+DPP posterior,"4,73 (2,57–8,10); P>1=1,000",DPP,BAYES_OBSTETRICO,TABLA_BAYES_OBSTETRICO.csv,b_DPPSI
+Eclampsia posterior obstétrica,"2,16 (0,87–4,89); P>1=0,952",Eclampsia,BAYES_OBSTETRICO,TABLA_BAYES_OBSTETRICO.csv,b_HIPERTENSIVOS_AECLAMPSIA
+Riesgo alto posterior,"1,60 (1,29–1,98); P>1=1,000",RIESGO ALTO,BAYES_CLINICO_INGRESO,TABLA_BAYES_CLINICO_INGRESO.csv,b_RIESGO_INGRESO_ARIESGOALTO
+Riesgo inminente posterior,"1,81 (1,29–2,51); P>1=1,000",RIESGO INMINENTE,BAYES_CLINICO_INGRESO,TABLA_BAYES_CLINICO_INGRESO.csv,b_RIESGO_INGRESO_ARIESGOINMINENTE
+Acompañada posterior,"0,71 (0,58–0,86); P<1=1,000",ACOMPANADA_BIN,BAYES_PRINCIPAL,TABLA_BAYES_PRINCIPAL.csv,b_ACOMPANADA_BINSI
+Controles posterior,"0,62 (0,57–0,68); P<1=1,000",CONTROLES_Z,BAYES_PRINCIPAL,TABLA_BAYES_PRINCIPAL.csv,b_CONTROLES_Z
+Sesiones posterior,"0,76 (0,68–0,84); P<1=1,000",SESIONES_Z,BAYES_PRINCIPAL,TABLA_BAYES_PRINCIPAL.csv,b_SESIONES_Z
+RPM posterior,"0,52 (0,36–0,74); P<1=1,000",RPM_A,BAYES_OBSTETRICO,TABLA_BAYES_OBSTETRICO.csv,b_RPM_ASI
+DPP frecuentista,"6,25 (3,59–10,87)",DPP,Modelo C,TABLA_5_MODELO_C_OBSTETRICO.csv,DPP
+Eclampsia frecuentista,"3,37 (1,32–8,61)",ECLAMPSIA,Modelo C,TABLA_5_MODELO_C_OBSTETRICO.csv,Eclampsia
+RPM frecuentista,"0,51 (0,35–0,74)",RPM,Modelo C,TABLA_5_MODELO_C_OBSTETRICO.csv,RPM
+Acompañada frecuentista,"0,70 (0,58–0,86)",ACOMPANADA,Modelo A,TABLA_3_MODELO_A_SOCIAL_ATENCION.csv,Acompañada
+Controles frecuentista,"0,84 (0,81–0,87)",NO_CONTROLES,Modelo A,TABLA_3_MODELO_A_SOCIAL_ATENCION.csv,Controles
+Sesiones frecuentista,"0,87 (0,83–0,92)",SESIONES,Modelo A,TABLA_3_MODELO_A_SOCIAL_ATENCION.csv,Sesiones
+Riesgo alto frecuentista,"1,64 (1,32–2,03)",RIESGO ALTO,Modelo B,TABLA_4_MODELO_B_MATERNO_CLINICO.csv,Riesgo alto
+Riesgo inminente frecuentista,"1,89 (1,33–2,69)",RIESGO INMINENTE,Modelo B,TABLA_4_MODELO_B_MATERNO_CLINICO.csv,Riesgo inminente
+R-hat máximo,"1,0013",Todos,Diagnóstico,DIAGNOSTICOS_TODOS_MODELOS.csv,max(Max_Rhat)
+ESS bulk mínimo,8664,Todos,Diagnóstico,DIAGNOSTICOS_TODOS_MODELOS.csv,min(Min_ESS_bulk)
+ESS tail mínimo,7153,Todos,Diagnóstico,DIAGNOSTICOS_TODOS_MODELOS.csv,min(Min_ESS_tail)
+Divergencias,0,Todos,Diagnóstico,DIAGNOSTICOS_TODOS_MODELOS.csv,sum(Divergencias)
+Controles ajustado por EG,"0,80 (0,72–0,89)",CONTROLES_Z,BAYES_SENS_EDAD_GESTACIONAL,TABLA_SENS_CONTROLES_EG.csv,b_CONTROLES_Z
+Sesiones ajustado por EG,"0,93 (0,84–1,04)",SESIONES_Z,BAYES_SENS_EDAD_GESTACIONAL,TABLA_SENS_CONTROLES_EG.csv,b_SESIONES_Z
+Acompañamiento ajustado por EG,"0,99 (0,79–1,25)",ACOMPANADA_BIN,BAYES_SENS_EDAD_GESTACIONAL,TABLA_SENS_CONTROLES_EG.csv,b_ACOMPANADA_BINSI
+Seguro sensibilidad,"1,31 (0,85–1,94); N=15924",SEGURO_A,BAYES_SEGURO_SENSIBILIDAD,TABLA_BAYES_SEGURO.csv,b_SEGURO_ASI
+Sola vs pareja,"1,41 (1,13–1,79)",ACOMPANADA_DETALLE,BAYES_ACOMPANAMIENTO_DETALLE,TABLA_BAYES_ACOMPANAMIENTO_DETALLE.csv,b_ACOMPANADA_DETALLESOLA
