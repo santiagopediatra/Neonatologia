@@ -1,8 +1,0 @@
-Se ajustaron modelos de regresión logística bayesiana asociativa con familia Bernoulli y enlace logit mediante brms y CmdStan.
-El muestreo utilizó cuatro cadenas, 4000 iteraciones por cadena (2000 de warmup) como configuración inicial, adapt_delta=0,99 y max_treedepth=15, con reintentos conservadores preespecificados ante problemas.
-Para coeficientes se usó normal(0,0.7) y para el intercepto normal(-4,1.5). Se efectuó análisis predictivo previo y comprobaciones predictivas posteriores.
-En los modelos finales, el máximo R-hat fue 1.001, el mínimo ESS bulk 8664, el mínimo ESS tail 7153 y se observaron 0 divergencias en total.
-Se informaron OR posteriores (mediana), intervalos creíbles del 95% y probabilidades posteriores continuas P(OR>1|datos) y P(OR<1|datos).
-Se realizaron sensibilidades a priors, edad continua, edad gestacional para controles, riesgo clínico al ingreso, complicaciones obstétricas, agrupación de hipertensión, seguro por alta proporción de faltantes y acompañamiento detallado.
-LOO se restringió a modelos ajustados sobre las mismas observaciones; no se equipararon p-valores con probabilidades posteriores.
-Debido al diseño transversal analítico, los resultados describen asociaciones y no se interpretan causalmente. Una OR menor de 1 no se denominó automáticamente protectora.

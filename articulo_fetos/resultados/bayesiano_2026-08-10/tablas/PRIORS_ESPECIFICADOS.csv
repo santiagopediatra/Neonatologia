@@ -1,7 +1,0 @@
-Modelo,Parametro,Prior,Media,SD,OR_2.5,OR_97.5,Uso
-Principal,Coeficientes,"normal(0,0.7)",0,0.7,0.2535992535089739,3.9432292728125633,Principal
-Principal,Intercepto,"normal(-4,1.5)",-4,1.5,NA,NA,Principal
-Sensible_esceptico,Coeficientes,"normal(0,0.5)",0,0.5,0.37531109885139957,2.664456241929417,Sensibilidad
-Sensible_esceptico,Intercepto,"normal(-4,1)",-4,1,NA,NA,Sensibilidad
-Sensible_amplio,Coeficientes,"normal(0,1)",0,1,0.140858420921045,7.099327065156633,Sensibilidad
-Sensible_amplio,Intercepto,"normal(-4,2)",-4,2,NA,NA,Sensibilidad

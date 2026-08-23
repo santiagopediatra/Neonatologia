@@ -1,6 +1,0 @@
-Los priors se definieron antes de utilizar los resultados bayesianos.
-Los coeficientes están centrados en ausencia de asociación (beta=0; OR=1), con distribuciones regulares y simétricas que no favorecen asociaciones positivas ni negativas.
-El prior principal normal(0,0.7) concentra aproximadamente 95% de la masa en OR 0,25 a 3,94.
-Se evaluaron priors más estrechos normal(0,0.5) y más amplios normal(0,1.0), únicamente como sensibilidad y sin escoger resultados por significación.
-No se utilizaron odds ratios frecuentistas de esta base para construir los priors.
-El intercepto normal(-4,1.5) refleja un desenlace infrecuente manteniendo incertidumbre amplia.
